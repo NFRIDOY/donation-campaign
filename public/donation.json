@@ -1,0 +1,134 @@
+[
+    {
+        "id": 1,
+        "picture": "product1.jpg",
+        "title": "Product 1",
+        "category": "Electronics",
+        "category_bg": "#FF5733",
+        "card_bg": "#EFEFEF",
+        "text_button_bg": "#007BFF",
+        "description": "A high-quality electronic gadget with advanced features.",
+        "price": "$499.99"
+    },
+    {
+        "id": 2,
+        "picture": "product2.jpg",
+        "title": "Product 2",
+        "category": "Clothing",
+        "category_bg": "#33FF57",
+        "card_bg": "#F5F5F5",
+        "text_button_bg": "#FF5733",
+        "description": "Trendy and fashionable clothing item for all occasions.",
+        "price": "$39.99"
+    },
+    {
+        "id": 3,
+        "picture": "product3.jpg",
+        "title": "Product 3",
+        "category": "Home Decor",
+        "category_bg": "#5733FF",
+        "card_bg": "#F0E68C",
+        "text_button_bg": "#6B8E23",
+        "description": "Beautiful home decor item to enhance your living space.",
+        "price": "$79.99"
+    },
+    {
+        "id": 4,
+        "picture": "product4.jpg",
+        "title": "Product 4",
+        "category": "Beauty",
+        "category_bg": "#FF5733",
+        "card_bg": "#FFF8DC",
+        "text_button_bg": "#8B4513",
+        "description": "Skin-care and beauty product for a radiant look.",
+        "price": "$29.99"
+    },
+    {
+        "id": 5,
+        "picture": "product5.jpg",
+        "title": "Product 5",
+        "category": "Sports",
+        "category_bg": "#33FF57",
+        "card_bg": "#D2B48C",
+        "text_button_bg": "#1E90FF",
+        "description": "Sports equipment for fitness enthusiasts.",
+        "price": "$149.99"
+    },
+    {
+        "id": 6,
+        "picture": "product6.jpg",
+        "title": "Product 6",
+        "category": "Books",
+        "category_bg": "#5733FF",
+        "card_bg": "#FFFFE0",
+        "text_button_bg": "#4B0082",
+        "description": "Best-selling novel that will keep you hooked.",
+        "price": "$19.99"
+    },
+    {
+        "id": 7,
+        "picture": "product7.jpg",
+        "title": "Product 7",
+        "category": "Toys",
+        "category_bg": "#FF5733",
+        "card_bg": "#FFF0F5",
+        "text_button_bg": "#800000",
+        "description": "Fun and educational toys for kids.",
+        "price": "$49.99"
+    },
+    {
+        "id": 8,
+        "picture": "product8.jpg",
+        "title": "Product 8",
+        "category": "Kitchen",
+        "category_bg": "#33FF57",
+        "card_bg": "#FFE4B5",
+        "text_button_bg": "#2E8B57",
+        "description": "Kitchen gadget for easy and efficient cooking.",
+        "price": "$59.99"
+    },
+    {
+        "id": 9,
+        "picture": "product9.jpg",
+        "title": "Product 9",
+        "category": "Garden",
+        "category_bg": "#5733FF",
+        "card_bg": "#98FB98",
+        "text_button_bg": "#228B22",
+        "description": "Gardening tools to make your garden flourish.",
+        "price": "$69.99"
+    },
+    {
+        "id": 10,
+        "picture": "product10.jpg",
+        "title": "Product 10",
+        "category": "Furniture",
+        "category_bg": "#FF5733",
+        "card_bg": "#FFFACD",
+        "text_button_bg": "#B8860B",
+        "description": "Stylish and comfortable furniture for your home.",
+        "price": "$299.99"
+    },
+    {
+        "id": 11,
+        "picture": "product11.jpg",
+        "title": "Product 11",
+        "category": "Health",
+        "category_bg": "#33FF57",
+        "card_bg": "#E6E6FA",
+        "text_button_bg": "#9932CC",
+        "description": "Health and wellness product for a better you.",
+        "price": "$89.99"
+    },
+    {
+        "id": 12,
+        "picture": "product12.jpg",
+        "title": "Product 12",
+        "category": "Travel",
+        "category_bg": "#5733FF",
+        "card_bg": "#B0C4DE",
+        "text_button_bg": "#4169E1",
+        "description": "Travel gear for your next adventure.",
+        "price": "$199.99"
+    }
+]
