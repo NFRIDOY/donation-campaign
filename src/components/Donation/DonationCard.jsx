@@ -6,12 +6,12 @@ export default function DonationCard({ donation }) {
     
     return (
         <div>
-            <div className={`bg-[${card_bg}]`}>
-                <div>
+            <div className={`bg-[${card_bg}] w-fit`}>
+                <div className="">
                     <img src={picture} alt="" />
                 </div>
                 <div>
-                    <h3 className={`bg-[${category_bg}]`}>
+                    <h3 className={`bg-[${category_bg}] text-[${text_button_bg}]`}>
                         {category}
                         {/* {category_bg+''} */}
                     </h3>

@@ -9,9 +9,11 @@ export default function Home() {
 
   return (
     <div>
-      {
-        donations?.map((donation) => <DonationCard donation={donation}></DonationCard>)
-      }
+      <div className="grid grid-cols-3">
+        {
+          donations?.map((donation) => <DonationCard donation={donation}></DonationCard>)
+        }
+      </div>
     </div>
   )
 }

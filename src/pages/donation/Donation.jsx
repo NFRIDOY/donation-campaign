@@ -1,6 +1,6 @@
 export default function Donation() {
   return (
-    <div className="bg-[#f8704725]">Donation
+    <div className="bg-[#0052ff]">Donation
         
     </div>
   )

@@ -6,7 +6,7 @@
         "category": "health",
         "category_bg": "#0052ff33",
         "card_bg": "#0052ff26",
-        "text_button_bg": "#0052FF",
+        "text_button_bg": "#0052ff",
         "description": "A high-quality electronic gadget with advanced features.",
         "price": "$499.99"
     },
@@ -50,7 +50,7 @@
         "category": "Education",
         "category_bg": "#ff444a33",
         "card_bg": "#ff444a26",
-        "text_button_bg": "#ff444a",
+        "text_button_bg": "#FF444A",
         "description": "Trendy and fashionable clothing item for all occasions.",
         "price": "$39.99"
     },
@@ -61,7 +61,7 @@
         "category": "health",
         "category_bg": "#0052ff33",
         "card_bg": "#0052ff26",
-        "text_button_bg": "#0052ff",
+        "text_button_bg": "#0052FF",
         "description": "A high-quality electronic gadget with advanced features.",
         "price": "$499.99"
     },
@@ -72,7 +72,7 @@
         "category": "Food",
         "category_bg": "#f8704732",
         "card_bg": "#f8704725",
-        "text_button_bg": "#f87147",
+        "text_button_bg": "#F87147",
         "description": "Skin-care and beauty product for a radiant look.",
         "price": "$29.99"
     },
@@ -83,7 +83,7 @@
         "category": "Clothing",
         "category_bg": "#79c23f33",
         "card_bg": "#79c23f26",
-        "text_button_bg": "#79c23f",
+        "text_button_bg": "#79C23F",
         "description": "Beautiful home decor item to enhance your living space.",
         "price": "$79.99"
     },
@@ -94,7 +94,7 @@
         "category": "Food",
         "category_bg": "#f8704732",
         "card_bg": "#f8704725",
-        "text_button_bg": "#f87147",
+        "text_button_bg": "#F87147",
         "description": "Skin-care and beauty product for a radiant look.",
         "price": "$29.99"
     },
@@ -105,7 +105,7 @@
         "category": "Clothing",
         "category_bg": "#79c23f33",
         "card_bg": "#79c23f26",
-        "text_button_bg": "#79c23f",
+        "text_button_bg": "#79C23F",
         "description": "Beautiful home decor item to enhance your living space.",
         "price": "$79.99"
     },
@@ -116,7 +116,7 @@
         "category": "health",
         "category_bg": "#0052ff33",
         "card_bg": "#0052ff26",
-        "text_button_bg": "#0052ff",
+        "text_button_bg": "#0052FF",
         "description": "A high-quality electronic gadget with advanced features.",
         "price": "$499.99"
     },
@@ -127,7 +127,7 @@
         "category": "Education",
         "category_bg": "#ff444a33",
         "card_bg": "#ff444a26",
-        "text_button_bg": "#ff444a",
+        "text_button_bg": "#FF444A",
         "description": "Trendy and fashionable clothing item for all occasions.",
         "price": "$39.99"
     }

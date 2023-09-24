@@ -4,8 +4,8 @@ import logo from '/Logo.png'
 
 export default function Navbar() {
     return (
-        <div className="px-20 py-7 text-2xl">
-            <div className="flex justify-between">
+        <div className="text-2xl pb-12">
+            <div className="flex justify-between items-center">
                 <div>
                     <NavLink
                         to="/"
