@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import logo from '/Logo.png'
 
 
 export default function Navbar() {
@@ -10,7 +11,7 @@ export default function Navbar() {
                         to="/"
                         className={"font-black"}
                     >
-                        Logo
+                        <img src={logo} alt="" />
                     </NavLink>
 
                 </div>
@@ -20,7 +21,7 @@ export default function Navbar() {
                             <NavLink
                                 to="/"
                                 className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "text-red-600 italic font-black" : ""
+                                    isPending ? "pending" : isActive ? "text-[#FF444A] italic font-black" : ""
                                 }
                             >
                                 Home
@@ -29,23 +30,23 @@ export default function Navbar() {
 
                         <li>
                             <NavLink
-                                to="/favorites"
+                                to="/donation"
                                 className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "text-red-600 italic font-black" : ""
+                                    isPending ? "pending" : isActive ? "text-[#FF444A] italic font-black" : ""
                                 }
                             >
-                                Favorites
+                                Donation
                             </NavLink>
                         </li>
 
                         <li>
                             <NavLink
-                                to="/login"
+                                to="/statistics"
                                 className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "text-red-600 italic font-black" : ""
+                                    isPending ? "pending" : isActive ? "text-[#FF444A] italic font-black" : ""
                                 }
                             >
-                                Login
+                                Statistics
                             </NavLink>
                         </li>
 
