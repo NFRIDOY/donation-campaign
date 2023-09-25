@@ -13,22 +13,26 @@ export default function DonationDetails() {
     console.log("donations From Details", donations );
 
     useEffect(() => {
-        const findDonation = donations?.map((donation1)=> donation1.id === id);
+        const findDonation = donations.find((donation1)=> donation1.id == id);
         console.log(findDonation);
 
-    }, [id, donation])
+        setDonation(findDonation);
+        
+
+    }, [id, donations])
 
     return (
         <div>
             <div>
                 <div>
-                    {/* <img src={} alt="" />
+                    {console.log(donation?.picture)}
+                    <img src={donation?.picture} alt="" />
                     <div className="overlay">
                         <button className="btn btn-primary">
-                            Donate $ Price {params.id}
-                            Donate $ Price {donations.id}
+                            Donate $ Price {id}
+                            Donate $ Price {id}
                         </button>
-                    </div> */}
+                    </div>
 
                 </div>
 
