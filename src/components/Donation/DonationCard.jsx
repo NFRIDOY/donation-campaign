@@ -19,18 +19,18 @@ export default function DonationCard({ donation }) {
     return (
         <div>
             {/* <div className={`bg-[${card_bg}] w-fit`}> */}
-            <div className={` w-fit`} style={cardBg}>
+            <div className="w-[500]" style={cardBg}>
                 <div className="">
-                    <img src={picture} alt="" />
+                    <img className="object-cover" src={picture} alt="" />
                 </div>
-                <div>
+                <div className="p-5">
                     {/* <h3 className={`bg-[${category_bg}] text-[${text_button_bg}]`}> */}
-                    <h3 style={categoryColor}>
+                    <h3 style={categoryColor} className="w-fit p-2 text-sm rounded-lg">
                         {category}
                         {/* {category_bg+''} */}
                     </h3>
                     {/* <h2 className={`text-[${text_button_bg}]`}> */}
-                    <h2 style={textButtonBg}>
+                    <h2 style={textButtonBg} className="text-2xl">
                         {title}
                     </h2>
                 </div>

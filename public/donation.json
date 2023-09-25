@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "picture": "./Assets/health1.png",
+        "picture": "https://s3-alpha-sig.figma.com/img/dc2b/01d7/bf69b0786c15caeae95edc74821add1d?Expires=1696809600&Signature=Eif4W~JikblFiEpzMCQfAj887B7wF37ZHI~SUBGGlBs--3nC0dVcQQM3-jdWtq01eyiorK4oTzpSQbARWVkb-gmFF6bwwf801YuiYCNfNaYlCoU39MJHykTFdhIA0O09T3TN46gQdcoNwBY-hnw2EOgNRxKbWEgNxWmZ~HEUKWkMtF6KRX~052L0s26wmqFLLj4iQa-ZnYbx2yw8pfJWsWQC0OS6Te5DVqFMVJ-7fV0c~~fRuykWXD92Fcl2Hl-CiipTethvjllMs6tBkmvL3-j2Evk-KDJWp33OIpbdErCJ8tHD4wz~3eVymRbKOoRfrynt2~HcFgx6F2DRkqWOow__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
         "title": "Clean water for children",
         "category": "Health",
         "category_bg": "#0052ff33",
@@ -13,7 +13,7 @@
     {
         "id": 2,
         "picture": "./Assets/education1.png",
-        "title": "Product 2",
+        "title": "Good Education",
         "category": "Education",
         "category_bg": "#ff444a33",
         "card_bg": "#ff444a26",
@@ -24,7 +24,7 @@
     {
         "id": 3,
         "picture": "./Assets/clothing1.png",
-        "title": "Product 3",
+        "title": "Used Clothing Drive",
         "category": "Clothing",
         "category_bg": "#79c23f33",
         "card_bg": "#79c23f26",
@@ -35,7 +35,7 @@
     {
         "id": 4,
         "picture": "./Assets/food1.png",
-        "title": "Product 4",
+        "title": "Better Food for Everyone",
         "category": "Food",
         "category_bg": "#f8704732",
         "card_bg": "#f8704725",
@@ -46,7 +46,7 @@
     {
         "id": 5,
         "picture": "./Assets/education1.png",
-        "title": "Product 2",
+        "title": "Good Education",
         "category": "Education",
         "category_bg": "#ff444a33",
         "card_bg": "#ff444a26",
@@ -56,7 +56,7 @@
     },
     {
         "id": 6,
-        "picture": "./Assets/health1.png",
+        "picture": "https://s3-alpha-sig.figma.com/img/dc2b/01d7/bf69b0786c15caeae95edc74821add1d?Expires=1696809600&Signature=Eif4W~JikblFiEpzMCQfAj887B7wF37ZHI~SUBGGlBs--3nC0dVcQQM3-jdWtq01eyiorK4oTzpSQbARWVkb-gmFF6bwwf801YuiYCNfNaYlCoU39MJHykTFdhIA0O09T3TN46gQdcoNwBY-hnw2EOgNRxKbWEgNxWmZ~HEUKWkMtF6KRX~052L0s26wmqFLLj4iQa-ZnYbx2yw8pfJWsWQC0OS6Te5DVqFMVJ-7fV0c~~fRuykWXD92Fcl2Hl-CiipTethvjllMs6tBkmvL3-j2Evk-KDJWp33OIpbdErCJ8tHD4wz~3eVymRbKOoRfrynt2~HcFgx6F2DRkqWOow__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
         "title": "Clean water for children",
         "category": "Health",
         "category_bg": "#0052ff33",
@@ -68,7 +68,7 @@
     {
         "id": 7,
         "picture": "./Assets/food1.png",
-        "title": "Product 4",
+        "title": "Better Food for Everyone",
         "category": "Food",
         "category_bg": "#f8704732",
         "card_bg": "#f8704725",
@@ -79,7 +79,7 @@
     {
         "id": 8,
         "picture": "./Assets/clothing1.png",
-        "title": "Product 3",
+        "title": "Used Clothing Drive",
         "category": "Clothing",
         "category_bg": "#79c23f33",
         "card_bg": "#79c23f26",
@@ -90,7 +90,7 @@
     {
         "id": 9,
         "picture": "./Assets/food1.png",
-        "title": "Product 4",
+        "title": "Better Food for Everyone",
         "category": "Food",
         "category_bg": "#f8704732",
         "card_bg": "#f8704725",
@@ -101,7 +101,7 @@
     {
         "id": 10,
         "picture": "./Assets/clothing1.png",
-        "title": "Product 3",
+        "title": "Used Clothing Drive",
         "category": "Clothing",
         "category_bg": "#79c23f33",
         "card_bg": "#79c23f26",
@@ -111,7 +111,7 @@
     },
     {
         "id": 11,
-        "picture": "./Assets/health1.png",
+        "picture": "https://s3-alpha-sig.figma.com/img/dc2b/01d7/bf69b0786c15caeae95edc74821add1d?Expires=1696809600&Signature=Eif4W~JikblFiEpzMCQfAj887B7wF37ZHI~SUBGGlBs--3nC0dVcQQM3-jdWtq01eyiorK4oTzpSQbARWVkb-gmFF6bwwf801YuiYCNfNaYlCoU39MJHykTFdhIA0O09T3TN46gQdcoNwBY-hnw2EOgNRxKbWEgNxWmZ~HEUKWkMtF6KRX~052L0s26wmqFLLj4iQa-ZnYbx2yw8pfJWsWQC0OS6Te5DVqFMVJ-7fV0c~~fRuykWXD92Fcl2Hl-CiipTethvjllMs6tBkmvL3-j2Evk-KDJWp33OIpbdErCJ8tHD4wz~3eVymRbKOoRfrynt2~HcFgx6F2DRkqWOow__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
         "title": "Clean water for children",
         "category": "Health",
         "category_bg": "#0052ff33",
@@ -123,7 +123,7 @@
     {
         "id": 12,
         "picture": "./Assets/education1.png",
-        "title": "Product 2",
+        "title": "Good Education",
         "category": "Education",
         "category_bg": "#ff444a33",
         "card_bg": "#ff444a26",
