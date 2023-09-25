@@ -12,7 +12,7 @@
     },
     {
         "id": 2,
-        "picture": "./Assets/education1.png",
+        "picture": "https://s3-alpha-sig.figma.com/img/3236/7f7c/bb78eb35b1d83676bfeb091b0af13288?Expires=1696809600&Signature=nhoDcldy77HjP~FexUye3KQKjLvA6rbGTKBXaej0G9UFNuIx6qHzXxg1J5yDMLKduYWJsiuHzntNdQrmCNcn~9dMNk5q-jlpPLb3GCoXJ-lxZhxT0jMgpOUpnJbmpbKNtTqglI2NxISPIgaT8HX8QqHDvv~vnEbT1r~KejLFi5pY2A501p8fRztTLLFxma9x2My81yPz0SMD2L6MaCeWe8qPUcnmy6-KX09cMozrM7P8oEhYA7aiuq1arChAhGoQ06Qr5IhukZRhIXE3Aeu~PgDG80wVYwMdRr8l7TEm8VofKsN-OxQmlGjF68YeHbm0Iwh~WKKe1Sq1W5mUR1kz7g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
         "title": "Good Education",
         "category": "Education",
         "category_bg": "#ff444a33",
@@ -23,7 +23,7 @@
     },
     {
         "id": 3,
-        "picture": "./Assets/clothing1.png",
+        "picture": "https://s3-alpha-sig.figma.com/img/7202/2d30/fb4761ab794b7c6a3bbe47db5aada389?Expires=1696809600&Signature=Au0-Q-7KmkkzDCG3NUwRfCVKwRrYuuTTtKfPuKR1HX5FByxIV2OkBtZiY5JDdvqS0BqAsRpKhd28-1cELNpJ4UsqZjxx0rUZQNJAwAyNK4lrhrBp1CbvOY-zWRMaWVuVjJP7ScNZ1u0S1VFY-AB4zHcM0OnMrDQbEZi2N5~AxU3lBKtjKpCZWcqKCOEbr-AwaqGcpHbbl89MM71-0ba9WVsOuwc3Yn4mvH14lOn-3AbhfRIAAtwl3ouIT8bVjcY~YiTp0InstQwJkIaCF9J2D-oyWVl4mvcyDT49uyRvcT1Vh4AKjoSnTbTL18A255zVW51NN~8rakqJKa5Abe~zJQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
         "title": "Used Clothing Drive",
         "category": "Clothing",
         "category_bg": "#79c23f33",
@@ -34,7 +34,7 @@
     },
     {
         "id": 4,
-        "picture": "./Assets/food1.png",
+        "picture": "https://s3-alpha-sig.figma.com/img/ff66/6d19/a5a6654d792205c42250767f04885dec?Expires=1696809600&Signature=gXGfGzaTzlIzQn50wOqfZdgJ~9R7-5nChp7y~Esq43XH8qmxFQZng2ZLzKOTXviR4pX0ppaDcZAN4DDClbFbC2w6F0qUmQsE76CEiglsCEj-39CuyU3XdEeeLbktDmBRz33YlFrkBJEINjW0cnvr3H3MNNSAJt-J7x~V5dEMsCWfDkpz48leoGfJ50KUf7wCnxJQaxp~N-zB4mHOU0-4K9eRj02x0CWDJwx1UNC9y46x58GgtqOL2TvjabXOFCpzPSY3vJSm355ddLPQxz7P3mmNPwSG7vraYWNdLOk4j9E7tn~WLLn7lauAhVaujRqkPZDQneAKUq-87QBKNpdCcw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
         "title": "Better Food for Everyone",
         "category": "Food",
         "category_bg": "#f8704732",
@@ -45,7 +45,7 @@
     },
     {
         "id": 5,
-        "picture": "./Assets/education1.png",
+        "picture": "https://s3-alpha-sig.figma.com/img/3236/7f7c/bb78eb35b1d83676bfeb091b0af13288?Expires=1696809600&Signature=nhoDcldy77HjP~FexUye3KQKjLvA6rbGTKBXaej0G9UFNuIx6qHzXxg1J5yDMLKduYWJsiuHzntNdQrmCNcn~9dMNk5q-jlpPLb3GCoXJ-lxZhxT0jMgpOUpnJbmpbKNtTqglI2NxISPIgaT8HX8QqHDvv~vnEbT1r~KejLFi5pY2A501p8fRztTLLFxma9x2My81yPz0SMD2L6MaCeWe8qPUcnmy6-KX09cMozrM7P8oEhYA7aiuq1arChAhGoQ06Qr5IhukZRhIXE3Aeu~PgDG80wVYwMdRr8l7TEm8VofKsN-OxQmlGjF68YeHbm0Iwh~WKKe1Sq1W5mUR1kz7g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
         "title": "Good Education",
         "category": "Education",
         "category_bg": "#ff444a33",
@@ -67,7 +67,7 @@
     },
     {
         "id": 7,
-        "picture": "./Assets/food1.png",
+        "picture": "https://s3-alpha-sig.figma.com/img/ff66/6d19/a5a6654d792205c42250767f04885dec?Expires=1696809600&Signature=gXGfGzaTzlIzQn50wOqfZdgJ~9R7-5nChp7y~Esq43XH8qmxFQZng2ZLzKOTXviR4pX0ppaDcZAN4DDClbFbC2w6F0qUmQsE76CEiglsCEj-39CuyU3XdEeeLbktDmBRz33YlFrkBJEINjW0cnvr3H3MNNSAJt-J7x~V5dEMsCWfDkpz48leoGfJ50KUf7wCnxJQaxp~N-zB4mHOU0-4K9eRj02x0CWDJwx1UNC9y46x58GgtqOL2TvjabXOFCpzPSY3vJSm355ddLPQxz7P3mmNPwSG7vraYWNdLOk4j9E7tn~WLLn7lauAhVaujRqkPZDQneAKUq-87QBKNpdCcw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
         "title": "Better Food for Everyone",
         "category": "Food",
         "category_bg": "#f8704732",
@@ -78,7 +78,7 @@
     },
     {
         "id": 8,
-        "picture": "./Assets/clothing1.png",
+        "picture": "https://s3-alpha-sig.figma.com/img/7202/2d30/fb4761ab794b7c6a3bbe47db5aada389?Expires=1696809600&Signature=Au0-Q-7KmkkzDCG3NUwRfCVKwRrYuuTTtKfPuKR1HX5FByxIV2OkBtZiY5JDdvqS0BqAsRpKhd28-1cELNpJ4UsqZjxx0rUZQNJAwAyNK4lrhrBp1CbvOY-zWRMaWVuVjJP7ScNZ1u0S1VFY-AB4zHcM0OnMrDQbEZi2N5~AxU3lBKtjKpCZWcqKCOEbr-AwaqGcpHbbl89MM71-0ba9WVsOuwc3Yn4mvH14lOn-3AbhfRIAAtwl3ouIT8bVjcY~YiTp0InstQwJkIaCF9J2D-oyWVl4mvcyDT49uyRvcT1Vh4AKjoSnTbTL18A255zVW51NN~8rakqJKa5Abe~zJQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
         "title": "Used Clothing Drive",
         "category": "Clothing",
         "category_bg": "#79c23f33",
@@ -89,7 +89,7 @@
     },
     {
         "id": 9,
-        "picture": "./Assets/food1.png",
+        "picture": "https://s3-alpha-sig.figma.com/img/ff66/6d19/a5a6654d792205c42250767f04885dec?Expires=1696809600&Signature=gXGfGzaTzlIzQn50wOqfZdgJ~9R7-5nChp7y~Esq43XH8qmxFQZng2ZLzKOTXviR4pX0ppaDcZAN4DDClbFbC2w6F0qUmQsE76CEiglsCEj-39CuyU3XdEeeLbktDmBRz33YlFrkBJEINjW0cnvr3H3MNNSAJt-J7x~V5dEMsCWfDkpz48leoGfJ50KUf7wCnxJQaxp~N-zB4mHOU0-4K9eRj02x0CWDJwx1UNC9y46x58GgtqOL2TvjabXOFCpzPSY3vJSm355ddLPQxz7P3mmNPwSG7vraYWNdLOk4j9E7tn~WLLn7lauAhVaujRqkPZDQneAKUq-87QBKNpdCcw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
         "title": "Better Food for Everyone",
         "category": "Food",
         "category_bg": "#f8704732",
@@ -100,7 +100,7 @@
     },
     {
         "id": 10,
-        "picture": "./Assets/clothing1.png",
+        "picture": "https://s3-alpha-sig.figma.com/img/7202/2d30/fb4761ab794b7c6a3bbe47db5aada389?Expires=1696809600&Signature=Au0-Q-7KmkkzDCG3NUwRfCVKwRrYuuTTtKfPuKR1HX5FByxIV2OkBtZiY5JDdvqS0BqAsRpKhd28-1cELNpJ4UsqZjxx0rUZQNJAwAyNK4lrhrBp1CbvOY-zWRMaWVuVjJP7ScNZ1u0S1VFY-AB4zHcM0OnMrDQbEZi2N5~AxU3lBKtjKpCZWcqKCOEbr-AwaqGcpHbbl89MM71-0ba9WVsOuwc3Yn4mvH14lOn-3AbhfRIAAtwl3ouIT8bVjcY~YiTp0InstQwJkIaCF9J2D-oyWVl4mvcyDT49uyRvcT1Vh4AKjoSnTbTL18A255zVW51NN~8rakqJKa5Abe~zJQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
         "title": "Used Clothing Drive",
         "category": "Clothing",
         "category_bg": "#79c23f33",
@@ -111,6 +111,17 @@
     },
     {
         "id": 11,
+        "picture": "https://s3-alpha-sig.figma.com/img/3236/7f7c/bb78eb35b1d83676bfeb091b0af13288?Expires=1696809600&Signature=nhoDcldy77HjP~FexUye3KQKjLvA6rbGTKBXaej0G9UFNuIx6qHzXxg1J5yDMLKduYWJsiuHzntNdQrmCNcn~9dMNk5q-jlpPLb3GCoXJ-lxZhxT0jMgpOUpnJbmpbKNtTqglI2NxISPIgaT8HX8QqHDvv~vnEbT1r~KejLFi5pY2A501p8fRztTLLFxma9x2My81yPz0SMD2L6MaCeWe8qPUcnmy6-KX09cMozrM7P8oEhYA7aiuq1arChAhGoQ06Qr5IhukZRhIXE3Aeu~PgDG80wVYwMdRr8l7TEm8VofKsN-OxQmlGjF68YeHbm0Iwh~WKKe1Sq1W5mUR1kz7g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+        "title": "Good Education",
+        "category": "Education",
+        "category_bg": "#ff444a33",
+        "card_bg": "#ff444a26",
+        "text_button_bg": "#FF444A",
+        "description": "Trendy and fashionable clothing item for all occasions.",
+        "price": "$39.99"
+    },
+    {
+        "id": 12,
         "picture": "https://s3-alpha-sig.figma.com/img/dc2b/01d7/bf69b0786c15caeae95edc74821add1d?Expires=1696809600&Signature=Eif4W~JikblFiEpzMCQfAj887B7wF37ZHI~SUBGGlBs--3nC0dVcQQM3-jdWtq01eyiorK4oTzpSQbARWVkb-gmFF6bwwf801YuiYCNfNaYlCoU39MJHykTFdhIA0O09T3TN46gQdcoNwBY-hnw2EOgNRxKbWEgNxWmZ~HEUKWkMtF6KRX~052L0s26wmqFLLj4iQa-ZnYbx2yw8pfJWsWQC0OS6Te5DVqFMVJ-7fV0c~~fRuykWXD92Fcl2Hl-CiipTethvjllMs6tBkmvL3-j2Evk-KDJWp33OIpbdErCJ8tHD4wz~3eVymRbKOoRfrynt2~HcFgx6F2DRkqWOow__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
         "title": "Clean water for children",
         "category": "Health",
@@ -119,16 +130,6 @@
         "text_button_bg": "#0052FF",
         "description": "A high-quality electronic gadget with advanced features.",
         "price": "$499.99"
-    },
-    {
-        "id": 12,
-        "picture": "./Assets/education1.png",
-        "title": "Good Education",
-        "category": "Education",
-        "category_bg": "#ff444a33",
-        "card_bg": "#ff444a26",
-        "text_button_bg": "#FF444A",
-        "description": "Trendy and fashionable clothing item for all occasions.",
-        "price": "$39.99"
+        
     }
 ]
