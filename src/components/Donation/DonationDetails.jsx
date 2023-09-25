@@ -1,10 +1,13 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom"
+import { DonationContext } from '../../Layout/MainLayout'
 
 
 export default function DonationDetails() {
 
     const [donation, setDonation] = useState();
+    // const [btnBg, setBtnBg] = useState();
+    const [allDonations, setAllDonations] = useContext(DonationContext)
 
     const { id } = useParams()
     console.log(id);
@@ -19,17 +22,38 @@ export default function DonationDetails() {
 
         setDonation(findDonation);
 
+        // const btnBg = donation?.text_button_bg
+
+        // const btnBgStyle = {
+        //     backgroundColor: donation?.text_button_bg,
+        // }
+        // setBtnBg(donation?.text_button_bg)
 
     }, [id, donations])
+
+
+    // const btnBgStyle = {
+    //     backgroundColor: btnBg,
+    // }
+
 
     return (
         <div>
             <div>
+                <div className="hero text-left min-h-[70vh] mb-14 relative" style={{ backgroundImage: `url(${donation?.picture})` }}>
+                        <div className="hero-overlay h-1/4 b-0 bg-black bg-opacity-50  "></div>
+                    <div className="flex  w-full pl-10">
+                        <button className="btn text-white" style={{ backgroundColor: donation?.text_button_bg, }} onClick={() => setAllDonations(allDonations+1)}>
+                            Donate {donation?.price}
+                        </button>
+                    </div>
+                </div>
                 <div>
                     {/* {console.log(donation?.picture)} */}
                     <img src={donation?.picture} alt="" />
+                    <div className="hero-overlay bg-black opacity-10">F</div>
                     <div className="overlay">
-                        <button className="btn btn-primary">
+                        <button className="btn text-white" style={{ backgroundColor: donation?.text_button_bg, }} >
                             Donate {donation?.price}
                         </button>
                     </div>
