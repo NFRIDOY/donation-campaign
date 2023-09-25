@@ -7,12 +7,13 @@ import Error from '../pages/Error/Error'
 
 import Donation from '../pages/donation/Donation'
 import Statistics from "../pages/statistics/Statistics";
+import DonationDetails from '../components/Donation/DonationDetails'
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <MainLayout></MainLayout>,
-        errorElement: <Error></Error>,
+        // errorElement: <Error></Error>,
         children: [
             {
                 path: "/",
@@ -28,9 +29,9 @@ const router = createBrowserRouter([
                 element: <Statistics></Statistics>
             },
             {
-                path: "/donation/:id",
-                element: <div>donation id</div>,
-                loader: () => fetch("donation.json")
+                path: "/donationDetails/:id",
+                loader: () => fetch(`/donation.json`),
+                element: <DonationDetails></DonationDetails>,
             },
 
         ],

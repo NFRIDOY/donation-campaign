@@ -1,4 +1,5 @@
-
+// import * as React from "react";
+import { Link } from "react-router-dom";
 
 export default function DonationCard({ donation }) {
     const { id, picture, title, category, category_bg, card_bg, text_button_bg, description, price } = donation;
@@ -18,15 +19,17 @@ export default function DonationCard({ donation }) {
 
     return (
         <div>
-            <div className="card card-compact " style={cardBg}>
-                <figure><img src={picture} alt="Shoes" className="h-200 w-full" /></figure>
-                <div className="card-body">
-                    <h2 style={categoryColor} className="w-fit p-2 text-sm rounded-lg">{category}</h2>
-                    <p className="card-title"  style={textButtonBg}>{title}</p>
-                    
+            <Link to={`/donationDetails/${id}`}>
+                <div className="card card-compact " style={cardBg}>
+                    <figure><img src={picture} alt="Shoes" className="h-200 w-full" /></figure>
+                    <div className="card-body">
+                        <h2 style={categoryColor} className="w-fit p-2 text-sm rounded-lg">{category}</h2>
+                        <p className="card-title" style={textButtonBg}>{title}</p>
+
+                    </div>
                 </div>
-            </div>
-            
+            </Link>
+
         </div>
     )
 }

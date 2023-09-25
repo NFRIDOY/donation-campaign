@@ -4,7 +4,7 @@ import logo from '/Logo.png'
 
 export default function Navbar() {
     return (
-        <div className="text-2xl pb-12">
+        <div className="text-2xl pb-12 font-black">
             <div className="flex justify-between items-center">
                 <div>
                     <NavLink
@@ -21,7 +21,7 @@ export default function Navbar() {
                             <NavLink
                                 to="/"
                                 className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "text-[#FF444A] italic font-black" : ""
+                                    isPending ? "pending" : isActive ? "text-[#FF444A] underline font-black" : ""
                                 }
                             >
                                 Home
@@ -32,7 +32,7 @@ export default function Navbar() {
                             <NavLink
                                 to="/donation"
                                 className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "text-[#FF444A] italic font-black" : ""
+                                    isPending ? "pending" : isActive ? "text-[#FF444A] underline font-black" : ""
                                 }
                             >
                                 Donation
@@ -43,7 +43,7 @@ export default function Navbar() {
                             <NavLink
                                 to="/statistics"
                                 className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "text-[#FF444A] italic font-black" : ""
+                                    isPending ? "pending" : isActive ? "text-[#FF444A] underline font-black" : ""
                                 }
                             >
                                 Statistics
