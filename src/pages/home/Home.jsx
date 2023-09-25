@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className=" flex justify-center">
       <div className="">
-        <div className="grid grid-cols-3 gap-x-9 gap-y-9">
+        <div className="grid grid-cols-4 gap-7">
           {
             donations?.map((donation) => <DonationCard key={donation.id} donation={donation}></DonationCard>)
           }

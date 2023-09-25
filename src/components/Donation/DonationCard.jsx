@@ -18,8 +18,8 @@ export default function DonationCard({ donation }) {
 
     return (
         <div>
-            <div className="card card-compact w-96 bg-base-100 shadow-xl" style={cardBg}>
-                <figure><img src={picture} alt="Shoes" /></figure>
+            <div className="card card-compact " style={cardBg}>
+                <figure><img src={picture} alt="Shoes" className="h-200 w-full" /></figure>
                 <div className="card-body">
                     <h2 style={categoryColor} className="w-fit p-2 text-sm rounded-lg">{category}</h2>
                     <p className="card-title"  style={textButtonBg}>{title}</p>
