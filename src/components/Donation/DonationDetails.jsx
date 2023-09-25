@@ -9,8 +9,10 @@ export default function DonationDetails() {
     // const [btnBg, setBtnBg] = useState();
     const [allDonations, setAllDonations] = useContext(DonationContext)
 
+    const [isActive, setIsActive] = useState(true);
+
     const { id } = useParams()
-    console.log(id);
+    // console.log(id);
 
     const donations = useLoaderData();
     // const {picture, title, category, category_bg, card_bg, text_button_bg, description, price } = donations;
@@ -18,7 +20,7 @@ export default function DonationDetails() {
 
     useEffect(() => {
         const findDonation = donations.find((donation1) => donation1.id == id);
-        console.log(findDonation);
+        // console.log(findDonation);
 
         setDonation(findDonation);
 
@@ -29,12 +31,19 @@ export default function DonationDetails() {
         // }
         // setBtnBg(donation?.text_button_bg)
 
-    }, [id, donations])
+        setAllDonations(allDonations+donation)
+
+    }, [id, donations,isActive])
 
 
     // const btnBgStyle = {
     //     backgroundColor: btnBg,
     // }
+
+    const handleDonateBtn = () => {
+        
+        setIsActive(!isActive)
+    }
 
 
     return (
@@ -43,7 +52,7 @@ export default function DonationDetails() {
                 <div className="hero text-left min-h-[70vh] mb-14 relative" style={{ backgroundImage: `url(${donation?.picture})` }}>
                         <div className="hero-overlay h-1/4 b-0 bg-black bg-opacity-50  "></div>
                     <div className="flex  w-full pl-10">
-                        <button className="btn text-white" style={{ backgroundColor: donation?.text_button_bg, }} onClick={() => setAllDonations(allDonations+1)}>
+                        <button className="btn text-white" style={{ backgroundColor: donation?.text_button_bg, }} onClick={handleDonateBtn}>
                             Donate {donation?.price}
                         </button>
                     </div>
