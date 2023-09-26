@@ -2,8 +2,19 @@ import { useContext, useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom"
 import { DonationContext } from '../../Layout/MainLayout'
 
+import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+
+import Swal from 'sweetalert2'
+
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 export default function DonationDetails() {
+
+    // Tost
+    // const notify = () => toast("Wow so easy !");
 
     const [donation, setDonation] = useState([]);
     // const [btnBg, setBtnBg] = useState();
@@ -76,7 +87,48 @@ export default function DonationDetails() {
                 alert("Succesfully Donated");
             }
             else {
-                alert("You Have Donated To " + isExist.title);
+                // alert("You Have Donated To " + isExist.title);
+                let timerInterval
+                Swal.fire({
+                    title: 'Error! You Have Already Donated',
+                    html: 'Close in <b></b> ms.',
+                    // html: 'I will close in <b></b> milliseconds.',
+                    timer: 1000,
+                    timerProgressBar: true,
+                    didOpen: () => {
+                        Swal.showLoading()
+                        const b = Swal.getHtmlContainer().querySelector('b')
+                        timerInterval = setInterval(() => {
+                            b.textContent = Swal.getTimerLeft()
+                        }, 100)
+                    },
+                    willClose: () => {
+                        clearInterval(timerInterval)
+                    }
+                }).then((result) => {
+                    /* Read more about handling dismissals below */
+                    if (result.dismiss === Swal.DismissReason.timer) {
+                        console.log('I was closed by the timer')
+                    }
+                })
+
+                // Swal.fire({
+                //     title: 'Error!',
+                //     text: 'You Have Already Donated',
+                //     icon: 'error',
+                //     confirmButtonText: 'Ok'
+                // })
+                // {notify}
+                // toast.success('🦄 Wow so easy!', {
+                //     position: "bottom-right",
+                //     autoClose: 5000,
+                //     hideProgressBar: false,
+                //     closeOnClick: true,
+                //     pauseOnHover: true,
+                //     draggable: true,
+                //     progress: undefined,
+                //     theme: "light",
+                // });
             }
 
 
