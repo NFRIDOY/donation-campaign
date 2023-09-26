@@ -31,19 +31,47 @@ export default function DonationDetails() {
         // }
         // setBtnBg(donation?.text_button_bg)
 
-        setAllDonations(findDonation)
 
-    }, [id, allDonations, isActive])
+
+    }, [id, donation, isActive])
 
 
     // const btnBgStyle = {
     //     backgroundColor: btnBg,
     // }
 
-    // const handleDonateBtn = () => {
+    const handleDonateBtn = () => {
 
-    //     setIsActive(!isActive)
-    // }
+        // setIsActive(!isActive)
+        // setAllDonations(...allDonations + donation)
+
+        const addToDonateArray = [];
+
+        // console.log(donation);
+
+        // localStorage.setItem("test", JSON.stringify(donation))
+        
+        const getDonated = JSON.parse(localStorage.getItem("Donated"));
+        // const getDonated = localStorage.getItem(donation.id);
+        // console.log(JSON.parse(getDonated));
+        
+        if(!getDonated) {
+            addToDonateArray.push(donation)
+            console.log(addToDonateArray);
+            localStorage.setItem("Donated", JSON.stringify(addToDonateArray))
+            // localStorage.setItem(JSON.stringify(donation.id), JSON.stringify(addToDonateArray))
+            alert("if")
+        }
+        else {
+            alert("else")
+            addToDonateArray.push(...getDonated, donation)
+            console.log(addToDonateArray);
+            localStorage.setItem("Donated", JSON.stringify(addToDonateArray))
+            // localStorage.setItem(JSON.stringify(donation.id), JSON.stringify(addToDonateArray))
+        }
+
+
+    }
 
     return (
         <div>
@@ -51,19 +79,19 @@ export default function DonationDetails() {
                 <div className="relative">
                     <img className="h-[85vh] w-full" src={donation?.picture} alt="" />
                     <div className="bg-[rgba(11,11,11,0.50)] h-32 absolute w-full bottom-0">A</div>
-                    <button onClick={() => setIsActive(!isActive)} className="bg-[rgba(11,11,11,0.50)] absolute bottom-10 left-10 btn text-white border-none" style={{ backgroundColor: donation?.text_button_bg, }} >
+                    <button onClick={handleDonateBtn} className="bg-[rgba(11,11,11,0.50)] absolute bottom-10 left-10 btn text-white border-none" style={{ backgroundColor: donation?.text_button_bg, }} >
                         Donate {donation?.price}
                     </button>
                 </div>
                 <div className="my-10">
-                        <h1 className="text-6xl pb-10 font-bold">
-                            {donation?.title}
-                        </h1>
-                        <p className="text-xl text-[#0b0b0bb2]">
-                            {donation?.description}
+                    <h1 className="text-6xl pb-10 font-bold">
+                        {donation?.title}
+                    </h1>
+                    <p className="text-xl text-[#0b0b0bb2]">
+                        {donation?.description}
 
-                        </p>
-                    </div>
+                    </p>
+                </div>
             </div>
             {/* <div className="hero text-left min-h-[70vh] mb-14 relative" style={{ backgroundImage: `url(${donation?.picture})` }}>
                         <div className="hero-overlay h-1/4 b-0 bg-black bg-opacity-50  "></div>

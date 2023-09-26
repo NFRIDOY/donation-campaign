@@ -1,15 +1,14 @@
-import { useContext } from "react"
-import { DonationContext } from "../../Layout/MainLayout"
+import DonateList from "../../components/Donate/DonateList";
 
 export default function Donation() {
-  const [allDonations, setAllDonations] = useContext(DonationContext)
 
-  console.log(allDonations.id);
+
+  // setAllDonations(allDonations)
+  // console.log(allDonations);
 
   return (
     <div className="">
-      Donation 
-        {allDonations.id}
+        <DonateList></DonateList>
     </div>
   )
 }

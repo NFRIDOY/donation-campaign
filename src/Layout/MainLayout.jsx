@@ -6,7 +6,7 @@ export const DonationContext = createContext([]);
 
 export default function MainLayout() {
 
-  const [allDonations, setAllDonations] = useState(DonationContext);
+  const [allDonations, setAllDonations] = useState([]);
 
   return (
     <div className='max-w-7xl mx-auto py-9'>
