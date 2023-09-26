@@ -9,7 +9,7 @@ export default function Donation() {
   return (
     <div className="">
       Donation 
-        {allDonations.id }
+        {allDonations.id}
     </div>
   )
 }

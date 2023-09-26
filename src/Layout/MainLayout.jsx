@@ -6,11 +6,15 @@ export const DonationContext = createContext([]);
 
 export default function MainLayout() {
 
-  const [allDonations, setAllDonations] = useState([]);
+  const [allDonations, setAllDonations] = useState(DonationContext);
 
   return (
     <div className='max-w-7xl mx-auto py-9'>
-      {allDonations}
+      {/* {allDonations} */}
+      {
+        // allDonations.map((donate)=> donate)
+        // console.log(allDonations)
+      }
       <Header></Header>
       <DonationContext.Provider value={[allDonations, setAllDonations]}>
         <Outlet></Outlet>
