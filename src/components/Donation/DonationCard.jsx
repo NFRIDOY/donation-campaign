@@ -20,7 +20,7 @@ export default function DonationCard({ donation }) {
     return (
         <div>
             <Link to={`/donationDetails/${id}`}>
-                <div className="card card-compact" style={cardBg}>
+                <div className="card card-compact rounded-lg" style={cardBg}>
                     <figure className=""><img src={picture} alt="Shoes" className="h-52 w-full" /></figure>
                     <div className="card-body">
                         <h2 style={categoryColor} className="w-fit p-2 text-sm rounded-lg">{category}</h2>
