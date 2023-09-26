@@ -71,10 +71,33 @@ export default function DonationDetails() {
             console.log(addToDonateArray);
             localStorage.setItem("Donated", JSON.stringify(addToDonateArray))
             // localStorage.setItem(JSON.stringify(donation.id), JSON.stringify(addToDonateArray))
-            alert("Succesfully Donated")
+            // alert("Succesfully Donated")
+            let timerInterval
+                Swal.fire({
+                    title: 'Succesfully Donated',
+                    html: 'Close in <b></b> ms.',
+                    // html: 'I will close in <b></b> milliseconds.',
+                    timer: 2000,
+                    timerProgressBar: true,
+                    didOpen: () => {
+                        Swal.showLoading()
+                        const b = Swal.getHtmlContainer().querySelector('b')
+                        timerInterval = setInterval(() => {
+                            b.textContent = Swal.getTimerLeft()
+                        }, 100)
+                    },
+                    willClose: () => {
+                        clearInterval(timerInterval)
+                    }
+                }).then((result) => {
+                    /* Read more about handling dismissals below */
+                    if (result.dismiss === Swal.DismissReason.timer) {
+                        console.log('I was closed by the timer')
+                    }
+                })
         }
         else {
-            addToDonateArray.push(...getDonated)
+            // addToDonateArray.push(...getDonated)
             // alert("Else")
             // console.log("donation.id",donation.id);
             console.log(addToDonateArray);
@@ -84,7 +107,31 @@ export default function DonationDetails() {
             if (!isExist) {
                 addToDonateArray.push(...getDonated, donation);
                 localStorage.setItem("Donated", JSON.stringify(addToDonateArray));
-                alert("Succesfully Donated");
+                // alert("Succesfully Donated");
+
+                let timerInterval
+                Swal.fire({
+                    title: 'Succesfully Donated',
+                    html: 'Close in <b></b> ms.',
+                    // html: 'I will close in <b></b> milliseconds.',
+                    timer: 2000,
+                    timerProgressBar: true,
+                    didOpen: () => {
+                        Swal.showLoading()
+                        const b = Swal.getHtmlContainer().querySelector('b')
+                        timerInterval = setInterval(() => {
+                            b.textContent = Swal.getTimerLeft()
+                        }, 100)
+                    },
+                    willClose: () => {
+                        clearInterval(timerInterval)
+                    }
+                }).then((result) => {
+                    /* Read more about handling dismissals below */
+                    if (result.dismiss === Swal.DismissReason.timer) {
+                        console.log('I was closed by the timer')
+                    }
+                })
             }
             else {
                 // alert("You Have Donated To " + isExist.title);
@@ -93,7 +140,7 @@ export default function DonationDetails() {
                     title: 'Error! You Have Already Donated',
                     html: 'Close in <b></b> ms.',
                     // html: 'I will close in <b></b> milliseconds.',
-                    timer: 1000,
+                    timer: 2000,
                     timerProgressBar: true,
                     didOpen: () => {
                         Swal.showLoading()
