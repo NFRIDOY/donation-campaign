@@ -50,23 +50,39 @@ export default function DonationDetails() {
         // console.log(donation);
 
         // localStorage.setItem("test", JSON.stringify(donation))
-        
+
         const getDonated = JSON.parse(localStorage.getItem("Donated"));
         // const getDonated = localStorage.getItem(donation.id);
         // console.log(JSON.parse(getDonated));
-        
-        if(!getDonated) {
+
+        if (!getDonated) {
             addToDonateArray.push(donation)
             console.log(addToDonateArray);
             localStorage.setItem("Donated", JSON.stringify(addToDonateArray))
             // localStorage.setItem(JSON.stringify(donation.id), JSON.stringify(addToDonateArray))
-            alert("if")
+            alert("Succesfully Donated")
         }
         else {
-            alert("else")
-            addToDonateArray.push(...getDonated, donation)
+            addToDonateArray.push(...getDonated)
+            // alert("Else")
+            // console.log("donation.id",donation.id);
             console.log(addToDonateArray);
-            localStorage.setItem("Donated", JSON.stringify(addToDonateArray))
+            // addToDonateArray.map(donatedAlready => console.log(donatedAlready.id))
+            const isExist = addToDonateArray.find(donatedAlready => donatedAlready.id == donation.id)
+            console.log("Is ex", isExist);
+            if (!isExist) {
+                addToDonateArray.push(...getDonated, donation);
+                localStorage.setItem("Donated", JSON.stringify(addToDonateArray));
+                alert("Succesfully Donated");
+            }
+            else {
+                alert("You Have Donated To " + isExist.title);
+            }
+
+
+
+
+
             // localStorage.setItem(JSON.stringify(donation.id), JSON.stringify(addToDonateArray))
         }
 
