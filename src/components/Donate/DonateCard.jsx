@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom"
+import PropTypes from 'prop-types'; // ES6
 
 export default function DonateCard({donate}) {
-    const { id, picture, title, category, category_bg, card_bg, text_button_bg, description, price } = donate
+    const {picture, title, category, category_bg, card_bg, text_button_bg, price } = donate
     return (
         <div>
             <div className="relative flex w-full max-w-[48rem] flex-row rounded-md bg-clip-border text-gray-700 shadow-md" style={{backgroundColor: card_bg}}>
@@ -13,7 +14,7 @@ export default function DonateCard({donate}) {
                     />
                 </div>
                 <div className="p-6">
-                    <h6 className="w-fit py-1 px-2 rounded-md mb-4 block font-sans text-base font-semibold uppercase leading-relaxed tracking-normal text-pink-500 antialiased" style={{backgroundColor: card_bg, color:text_button_bg}}>
+                    <h6 className="w-fit py-1 px-2 rounded-md mb-4 block font-sans text-base font-semibold uppercase leading-relaxed tracking-normal text-pink-500 antialiased" style={{backgroundColor: category_bg, color:text_button_bg}}>
                         {category}
                     </h6>
                     <h4 className="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased" >
@@ -51,4 +52,8 @@ export default function DonateCard({donate}) {
 
         </div>
     )
+}
+
+DonateCard.propTypes = {
+    donate: PropTypes.object
 }

@@ -38,15 +38,6 @@ export default function DonationDetails() {
         setAllDonations(JSON.parse(localStorage.getItem("Donated")))
         console.log(allDonations);
 
-        // const btnBg = donation?.text_button_bg
-
-        // const btnBgStyle = {
-        //     backgroundColor: donation?.text_button_bg,
-        // }
-        // setBtnBg(donation?.text_button_bg)
-
-
-
     }, [id, donation, isActive])
 
 
@@ -61,13 +52,7 @@ export default function DonationDetails() {
 
         const addToDonateArray = [];
 
-        // console.log(donation);
-
-        // localStorage.setItem("test", JSON.stringify(donation))
-
         const getDonated = JSON.parse(localStorage.getItem("Donated"));
-        // const getDonated = localStorage.getItem(donation.id);
-        // console.log(JSON.parse(getDonated));
 
         if (!getDonated) {
             addToDonateArray.push(donation)
@@ -79,7 +64,6 @@ export default function DonationDetails() {
             Swal.fire({
                 title: 'Succesfully Donated',
                 html: 'Close in <b></b> ms.',
-                // html: 'I will close in <b></b> milliseconds.',
                 timer: 1000,
                 timerProgressBar: true,
                 didOpen: () => {
@@ -164,30 +148,8 @@ export default function DonationDetails() {
                     }
                 })
 
-                // Swal.fire({
-                //     title: 'Error!',
-                //     text: 'You Have Already Donated',
-                //     icon: 'error',
-                //     confirmButtonText: 'Ok'
-                // })
-                // {notify}
-                // toast.success('🦄 Wow so easy!', {
-                //     position: "bottom-right",
-                //     autoClose: 5000,
-                //     hideProgressBar: false,
-                //     closeOnClick: true,
-                //     pauseOnHover: true,
-                //     draggable: true,
-                //     progress: undefined,
-                //     theme: "light",
-                // });
             }
 
-
-
-
-
-            // localStorage.setItem(JSON.stringify(donation.id), JSON.stringify(addToDonateArray))
         }
 
         
@@ -213,33 +175,6 @@ export default function DonationDetails() {
                     </p>
                 </div>
             </div>
-            {/* <div className="hero text-left min-h-[70vh] mb-14 relative" style={{ backgroundImage: `url(${donation?.picture})` }}>
-                        <div className="hero-overlay h-1/4 b-0 bg-black bg-opacity-50  "></div>
-                    <div className="flex  w-full pl-10">
-                        <button className="btn text-white" style={{ backgroundColor: donation?.text_button_bg, }} onClick={handleDonateBtn}>
-                            Donate {donation?.price}
-                        </button>
-                    </div>
-                </div> */}
-            {/* <div>
-                    <img src={donation?.picture} alt="" />
-                    <div className="hero-overlay bg-black opacity-10">F</div>
-                    <div className="overlay">
-                        <button className="btn text-white" style={{ backgroundColor: donation?.text_button_bg, }} >
-                            Donate {donation?.price}
-                        </button>
-                    </div>
-                    <div className="my-10">
-                        <h1 className="text-6xl pb-10">
-                            {donation?.title}
-                        </h1>
-                        <p className="text-xl text-[#0b0b0bb2]">
-                            {donation?.description}
-
-                        </p>
-                    </div>
-
-                </div> */}
 
         </div>
 

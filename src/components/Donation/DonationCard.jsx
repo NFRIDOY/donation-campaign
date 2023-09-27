@@ -1,8 +1,9 @@
 // import * as React from "react";
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types'; // ES6
 
 export default function DonationCard({ donation }) {
-    const { id, picture, title, category, category_bg, card_bg, text_button_bg, description, price } = donation;
+    const { id, picture, title, category, category_bg, card_bg, text_button_bg, } = donation;
 
     const cardBg = {
         backgroundColor: card_bg
@@ -34,24 +35,6 @@ export default function DonationCard({ donation }) {
     )
 }
 
-// DonationCard.prototype = {
-//     donation.ProtoType =
-// }
-
-// {/* <div className={`bg-[${card_bg}] w-fit`}> */}
-// <div className="" style={cardBg}>
-// <div className="">
-//     <img className="object-cover" src={picture} alt="" />
-// </div>
-// <div className="p-5">
-//     {/* <h3 className={`bg-[${category_bg}] text-[${text_button_bg}]`}> */}
-//     <h3 style={categoryColor} className="w-fit p-2 text-sm rounded-lg">
-//         {category}
-//         {/* {category_bg+''} */}
-//     </h3>
-//     {/* <h2 className={`text-[${text_button_bg}]`}> */}
-//     <h2 style={textButtonBg} className="text-2xl">
-//         {title}
-//     </h2>
-// </div>
-// </div>
+DonationCard.propTypes = {
+    donation: PropTypes.object
+}
