@@ -2,8 +2,8 @@ import { useContext, useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom"
 import { DonationContext } from '../../Layout/MainLayout'
 
-import React from 'react';
-import { ToastContainer, toast } from 'react-toastify';
+// import React from 'react';
+// import { ToastContainer, toast } from 'react-toastify';
 
 import Swal from 'sweetalert2'
 
@@ -16,7 +16,7 @@ export default function DonationDetails() {
     // Tost
     // const notify = () => toast("Wow so easy !");
 
-    const [donation, setDonation] = useState([]);
+    const [donation, setDonation] = useState();
     // const [btnBg, setBtnBg] = useState();
     const [allDonations, setAllDonations] = useContext(DonationContext)
 
@@ -73,36 +73,38 @@ export default function DonationDetails() {
             // localStorage.setItem(JSON.stringify(donation.id), JSON.stringify(addToDonateArray))
             // alert("Succesfully Donated")
             let timerInterval
-                Swal.fire({
-                    title: 'Succesfully Donated',
-                    html: 'Close in <b></b> ms.',
-                    // html: 'I will close in <b></b> milliseconds.',
-                    timer: 2000,
-                    timerProgressBar: true,
-                    didOpen: () => {
-                        Swal.showLoading()
-                        const b = Swal.getHtmlContainer().querySelector('b')
-                        timerInterval = setInterval(() => {
-                            b.textContent = Swal.getTimerLeft()
-                        }, 100)
-                    },
-                    willClose: () => {
-                        clearInterval(timerInterval)
-                    }
-                }).then((result) => {
-                    /* Read more about handling dismissals below */
-                    if (result.dismiss === Swal.DismissReason.timer) {
-                        console.log('I was closed by the timer')
-                    }
-                })
+            Swal.fire({
+                title: 'Succesfully Donated',
+                html: 'Close in <b></b> ms.',
+                // html: 'I will close in <b></b> milliseconds.',
+                timer: 1000,
+                timerProgressBar: true,
+                didOpen: () => {
+                    Swal.showLoading()
+                    const b = Swal.getHtmlContainer().querySelector('b')
+                    timerInterval = setInterval(() => {
+                        b.textContent = Swal.getTimerLeft()
+                    }, 100)
+                },
+                willClose: () => {
+                    clearInterval(timerInterval)
+                }
+            }).then((result) => {
+                /* Read more about handling dismissals below */
+                if (result.dismiss === Swal.DismissReason.timer) {
+                    console.log('I was closed by the timer')
+                }
+            })
         }
         else {
             // addToDonateArray.push(...getDonated)
             // alert("Else")
-            // console.log("donation.id",donation.id);
-            console.log(addToDonateArray);
-            // addToDonateArray.map(donatedAlready => console.log(donatedAlready.id))
-            const isExist = addToDonateArray.find(donatedAlready => donatedAlready.id == donation.id)
+            console.log("donation.id", donation.id);
+            // console.log(addToDonateArray);
+            // const listDonatedArray = 
+            addToDonateArray.map(donatedAlready => console.log(donatedAlready.id))
+            // console.log(listDonatedArray);
+            const isExist = getDonated.find(donatedAlready => donatedAlready.id === donation.id)
             console.log("Is ex", isExist);
             if (!isExist) {
                 addToDonateArray.push(...getDonated, donation);
@@ -114,7 +116,7 @@ export default function DonationDetails() {
                     title: 'Succesfully Donated',
                     html: 'Close in <b></b> ms.',
                     // html: 'I will close in <b></b> milliseconds.',
-                    timer: 2000,
+                    timer: 1000,
                     timerProgressBar: true,
                     didOpen: () => {
                         Swal.showLoading()
@@ -140,7 +142,7 @@ export default function DonationDetails() {
                     title: 'Error! You Have Already Donated',
                     html: 'Close in <b></b> ms.',
                     // html: 'I will close in <b></b> milliseconds.',
-                    timer: 2000,
+                    timer: 1000,
                     timerProgressBar: true,
                     didOpen: () => {
                         Swal.showLoading()
