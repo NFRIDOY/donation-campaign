@@ -7,7 +7,7 @@ export default function Donation() {
   // console.log(allDonations);
 
   return (
-    <div className="">
+    <div className="px-4">
         <DonateList></DonateList>
     </div>
   )
