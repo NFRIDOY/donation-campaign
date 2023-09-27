@@ -2,7 +2,7 @@ import Pie from '../../components/PiChart/Pie'
 
 export default function Statistics() {
   return (
-    <div className='h-[80%]'>
+    <div className='lg:h-[80%] w-screen'>
       <Pie></Pie>
     </div>
   )

@@ -19,7 +19,28 @@ function Piechart() {
 
     return (
         <React.Fragment>
-            <div className="container-fluid mb-3">
+            <div className="container-fluid mb-3 w-screen lg:hidden flex flex-col items-center justify-center">
+                <h3 className="mt-3 text-4xl">Welcome to Piechart </h3>
+                <Chart
+                    type="pie"
+                    width={400}
+                    height={450}
+
+                    series={[allDonations.length || 0, 12 - (allDonations.length || 0)]}
+
+                    options={{
+                        title: {
+                            text: "Donated PieChart"
+                        },
+                        noData: { text: "Empty Data" },
+                        colors:["#00C49F","#FF444A"],
+                        labels: ["Donated", "Not Donated"]
+
+                    }}
+                >
+                </Chart>
+            </div>
+            <div className="container-fluid mb-3 w-screen hidden lg:block">
                 <h3 className="mt-3 text-4xl">Welcome to Piechart </h3>
                 <Chart
                     type="pie"
