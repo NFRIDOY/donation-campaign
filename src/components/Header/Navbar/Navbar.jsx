@@ -4,9 +4,9 @@ import logo from '/Logo.png'
 
 export default function Navbar() {
     return (
-        <div className="text-2xl pb-12 font-black">
+        <div className="text-2xl pb-12 font-black px-3">
             <div className="flex justify-between items-center">
-                <div>
+                <div className="hidden md:block">
                     <NavLink
                         to="/"
                         className={"font-black"}

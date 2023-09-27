@@ -18,7 +18,7 @@ export default function Home() {
       <Banner setSearch={setSearch}></Banner>
       {/* {typeof(search)} */}
       <div className=" flex justify-center">
-        <div className="grid grid-cols-4 gap-7">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-7">
           {
             !search ? donations?.map((donation) => <DonationCard key={donation.id} donation={donation}></DonationCard>) : searchArray?.map((donation) => <DonationCard key={donation.id} donation={donation}></DonationCard>)
             // donations?.map((donation) => <DonationCard key={donation.id} donation={donation}></DonationCard>)
