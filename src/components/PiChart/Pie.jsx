@@ -26,7 +26,7 @@ function Piechart() {
                     width={1349}
                     height={450}
 
-                    series={[allDonations.length, 12 - (allDonations.length || 0)]}
+                    series={[allDonations.length || 0, 12 - (allDonations.length || 0)]}
 
                     options={{
                         title: {
