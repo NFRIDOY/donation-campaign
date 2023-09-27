@@ -1,9 +1,11 @@
 // please install npm install react-apexcharts apexcharts
 import React, { useState, useEffect, useContext } from "react";
 import Chart from "react-apexcharts";
-import { DonationContext } from "../../Layout/MainLayout";
+// import { DonationContext } from "../../Layout/MainLayout";
 function Piechart() {
-    const [allDonations, setAllDonations] = useContext(DonationContext)
+    // const [allDonations, setAllDonations] = useContext(DonationContext)
+    const [allDonations, setAllDonations] = useState(0)
+
     useEffect(() => {
         const Donated = JSON.parse(localStorage.getItem("Donated"))
         if(Donated) {
@@ -24,7 +26,7 @@ function Piechart() {
                     width={1349}
                     height={450}
 
-                    series={[allDonations.length, 12 - allDonations.length]}
+                    series={[allDonations.length, 12 - (allDonations.length || 0)]}
 
                     options={{
                         title: {
