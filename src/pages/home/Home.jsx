@@ -10,8 +10,8 @@ export default function Home() {
   // console.log(donations);
   const [search, setSearch] = useState("");
 
-  const searchArray = donations.filter((donation) => donation.category.toLowerCase() === search)
-  console.log(search);
+  const searchArray = donations.filter((donation) => donation.category === search)
+  // console.log(search);
   console.log(searchArray);
   return (
     <div>

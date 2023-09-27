@@ -5,7 +5,7 @@ export default function Banner({ setSearch }) {
         e.preventDefault();
         const searchValue = e.target[0].value;
 
-        console.log(searchValue);
+        // console.log(searchValue);
         setSearch(searchValue);
     }
     return (
@@ -19,7 +19,7 @@ export default function Banner({ setSearch }) {
                         <div className="flex justify-center gap-2">
                             <div >
                                 <form action="" onSubmit={handleSubmit} className="form-control w-72 flex flex-row gap-1">
-                                    <input type="text" placeholder="Search By Category" className="input input-bordered w-full md:w-auto rounded-l-lg text-black font-bold" />
+                                    <input type="text" placeholder="Search. [Case Sensitive. Becarefull]" className="input input-bordered w-full md:w-auto rounded-l-lg text-black " />
                                     <button type="submit" onClick={() => setSearch()} className="btn bg-[#FF444A] text-white hover:bg-black hover:text-white">Search</button>
                                 </form>
                             </div>
