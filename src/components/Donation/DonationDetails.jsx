@@ -35,6 +35,9 @@ export default function DonationDetails() {
 
         setDonation(findDonation);
 
+        setAllDonations(JSON.parse(localStorage.getItem("Donated")))
+        console.log(allDonations);
+
         // const btnBg = donation?.text_button_bg
 
         // const btnBgStyle = {
@@ -187,7 +190,7 @@ export default function DonationDetails() {
             // localStorage.setItem(JSON.stringify(donation.id), JSON.stringify(addToDonateArray))
         }
 
-
+        
     }
 
     return (
