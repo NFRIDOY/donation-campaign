@@ -20,7 +20,7 @@ export default function DonateList() {
         <div>
             <div className="grid grid-cols-2 gap-8">
                 {
-                    localStorage.getItem("Donated") ? isShowAll ? allDonations.slice(0, 4).map((donate) => <DonateCard key={donate.id} donate={donate}></DonateCard>) : allDonations.slice(0, 12).map((donate) => <DonateCard key={donate.id} donate={donate}></DonateCard>) : DataNotFound()
+                    localStorage.getItem("Donated") ? !isShowAll ? allDonations.slice(0, 4).map((donate) => <DonateCard key={donate.id} donate={donate}></DonateCard>) : allDonations.slice(0, 12).map((donate) => <DonateCard key={donate.id} donate={donate}></DonateCard>) : DataNotFound()
                 }
 
             </div>
