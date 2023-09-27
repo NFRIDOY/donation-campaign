@@ -8,6 +8,7 @@ import Error from '../pages/Error/Error'
 import Donation from '../pages/donation/Donation'
 import Statistics from "../pages/statistics/Statistics";
 import DonationDetails from '../components/Donation/DonationDetails'
+import DonationError from "../pages/Error/DonationError";
 
 const router = createBrowserRouter([
     {
@@ -22,7 +23,8 @@ const router = createBrowserRouter([
             },
             {
                 path: "/donation",
-                element: <Donation></Donation>
+                element: <Donation></Donation>,
+                // errorElement: <DonationError></DonationError>,
             },
             {
                 path: "/statistics",
