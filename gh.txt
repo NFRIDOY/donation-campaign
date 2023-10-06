@@ -1,15 +1,16 @@
 …or create a new repository on the command line
 
-echo "# b8a8-donation-campaign-NFRIDOY" >> README.md
+echo "# donation-campaign" >> README.md
 git init
 git add .
-git commit -m "donation-campaign inital Commit"
+git commit -m "donation-capmpain set new Repo"
 git branch -M main
-git remote add origin https://github.com/programming-hero-web-course-4/b8a8-donation-campaign-NFRIDOY.git
+git remote set-url origin https://github.com/NFRIDOY/donation-campaign.git
+git remote add origin https://github.com/NFRIDOY/donation-campaign.git
 git push -u origin main
 
 …or push an existing repository from the command line
 
-git remote add origin https://github.com/programming-hero-web-course-4/b8a8-donation-campaign-NFRIDOY.git
+git remote add origin https://github.com/NFRIDOY/donation-campaign.git
 git branch -M main
 git push -u origin main
