@@ -1,7 +1,7 @@
 import { useLoaderData } from "react-router-dom"
 import DonationCard from "../../components/Donation/DonationCard";
 import Banner from "../../components/Header/Banner/Banner";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 export default function Home() {
@@ -10,9 +10,16 @@ export default function Home() {
   // console.log(donations);
   const [search, setSearch] = useState("");
 
-  const searchArray = donations.filter((donation) => donation.category === search)
+  const [searchArray, setSearchArray] = useState([])
+  console.log(donations.lenght);
+
+  useEffect(() => {
+    const s = donations?.filter((donation) => donation?.category?.toLowerCase() === search?.toLowerCase())
+    console.log(s);
+    setSearchArray(s);
+  },[donations,search])
+  
   // console.log(search);
-  console.log(searchArray);
   return (
     <div>
       <Banner setSearch={setSearch}></Banner>
